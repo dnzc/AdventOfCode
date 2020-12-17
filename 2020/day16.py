@@ -50,10 +50,6 @@ def solve2(lines):
                 except KeyError:
                     asdf[name] = [i]
 
-    print(asdf)
-    # not going to lie in the real thing i did it manually from here since i could backtrack from seeing that the xth field has x possible values so you can find the one with one possible value, which tells you the one with two, which tells you the one with three etc.
-    # so below is added code to automate that process
-
     q = sorted(asdf, key=lambda k: len(asdf[k]))
     final = {}
     seen = []

@@ -2,7 +2,6 @@ def solve1(lines):
     asdf = [''.join(i) for i in zip(*[list(i) for i in lines])]
     g = ""
     e = ""
-    print(len(asdf))
     for i in asdf:
         g += "0" if i.count("0") > i.count("1") else "1"
         e += "1" if i.count("0") > i.count("1") else "0"

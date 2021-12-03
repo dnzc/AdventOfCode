@@ -15,7 +15,6 @@ def solve2(lines):
         asdf = [''.join(i) for i in zip(*[list(i) for i in a])]
         t = "0" if asdf[i].count("0") > asdf[i].count("1") else "1"
         a2 = [j for j in a if j[i]==t]
-        print(a, t, i)
         a = list(a2)
         if len(a) == 1: break
     ox = int(a[0], 2)

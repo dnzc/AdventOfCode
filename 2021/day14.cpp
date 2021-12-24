@@ -77,6 +77,7 @@ void solve2() {
     for(auto const& l: lettercounts) {
         if (l.first == '#') continue;
         sorted.insert(l.second/2);
+    }
     cout << *sorted.rbegin() - *sorted.begin() << "\n";
 
 }
